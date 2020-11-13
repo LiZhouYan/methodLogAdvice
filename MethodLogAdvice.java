@@ -2,9 +2,9 @@ package com.xxxxx.common.advice;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.ninebot.apr.scooter.beans.data.ApiRequestData;
-import com.ninebot.apr.scooter.beans.data.ApiResponseData;
-import com.ninebot.apr.scooter.utils.http.HttpUtils;
+import com.xxxx.beans.data.ApiRequestData;
+import com.xxxx.beans.data.ApiResponseData;
+import com.xxxx.utils.http.HttpUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;
 import org.aspectj.lang.ProceedingJoinPoint;
