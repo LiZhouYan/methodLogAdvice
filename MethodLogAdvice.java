@@ -107,9 +107,11 @@ public class MethodLogAdvice {
                 for (int i = 0; i < args.length; i++) {
                     Object object = args[i];
                     Annotation paramAnnotation = null;
-                    //获取参数注解
+                     //获取参数注解 TODO 需要改进具体的注解
                     if (paramAnnotations != null && paramAnnotations.length > i) {
-                        if (paramAnnotations[i].length > 0) {
+                        if (paramAnnotations[i].length == 1) {
+                            paramAnnotation = paramAnnotations[i][0];
+                        }else if (paramAnnotations[i].length > 1) {
                             paramAnnotation = paramAnnotations[i][1];
                         }
                     }
